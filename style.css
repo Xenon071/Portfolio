@@ -1,20 +1,37 @@
-:root{
-    --highlight:#ff451b;
+:root {
+    /* --highlight: rgb(59, 159, 218); */
+    --highlight: rgb(59, 160, 255);
+    --neutral: rgb(209, 207, 207);
+    
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+/* universal title  */
+h3{
+    font-size: 65px;
+}
+h4{
+    font-size: 25px;
+}
+
+body {
+    
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #3f3d3d;
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    background: rgb(63, 63, 63);
+    width: 100%;
+    height: 100vh;
+   
 }
 
 /* navbar starts */
 
-.navbar{
+.navbar {
     align-items: center;
     justify-content: space-around;
     background-color: transparent;
@@ -22,25 +39,25 @@ body{
     padding: 20px;
 }
 
-.logo a{
+.logo a {
     font-weight: 700;
     font-size: 40px;
     text-decoration: none;
     color: var(--highlight);
 }
 
-.nav-links ul{
+.nav-links ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-links li{
+.nav-links li {
     list-style: none;
-    margin-left: 2rem; 
+    margin-left: 2rem;
 }
 
-.nav-links a{
+.nav-links a {
     font-size: 25px;
     text-decoration: none;
     color: var(--highlight);
@@ -57,33 +74,40 @@ body{
 /* hero part starts*/
 
 
-#hero{
+#hero {
     height: 93.5vh;
-    border: 2px solid red;
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
 
 }
-#hero div{
+
+#hero div {
     height: 570px;
+
     
-    border: 2px solid rgb(7, 226, 161);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#left{
 
+#left {
+    color: white;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
     width: 750px;
 }
-#left h2{
+
+#left h2 {
     margin-top: 20px;
     
 }
 
-#right{
+#right {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
     width: 500px;
     text-align: center;
 }
@@ -100,22 +124,450 @@ body{
 
 /* About me section starts */
 
-#aboutme{
-    margin-top: 100px;
-    text-align: center;
+#about {
+    
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-#aboutme span{
+.box {
+    /* min-height: 800px; */
+    border: 5px solid white;
+    
+}
+#box3{
+    width: 50%;
+}
+#box4{
+    
+    width: 50%;
+}
+
+
+#box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 221, 153);
+    font-size: 22px;
+}
+#box3 div{
+    width: 590px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+#box4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+}
+.serv-con {
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
     color: var(--highlight);
-    padding: 20px;
-    font-size: 50px;
-    border: 5px solid var(--highlight);
+    font-size: 25px;
 }
 
-#aboutme p{
-    margin-top: 50px;
-    font-size: 35px;
+
+.serv-con div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    background: white;
+    border-radius: 15%;
+    
+}
+
+
+
+
+.serv-icon {
+    color: var(--highlight);
+    font-size: 50px;
 }
 
 
 /* About me section ends */
+
+
+
+
+/* My works section starts  */
+
+#box6 h3{
+    text-align: center;
+    margin: 80px 0px;
+    
+}
+
+#prcon{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+}
+
+/* My works section ends  */
+
+
+
+
+
+/* skills section starts  */
+
+
+#box5 h3{
+    margin-top: 50px;
+    text-align: center;
+    color: var(--highlight);
+}
+#skill-wrap{
+    min-height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    height: 450px;
+    width: 450px;
+    background: rgba(204, 222, 238, 0.295);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    backdrop-filter: blur(18px);
+}
+
+.card-body p{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+
+
+/* skills section ends  */
+
+
+
+/* contact me sectionn starts */
+#contact{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.con-container{
+    /* min-width: 1000px; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+
+    /* background: #f3d9d9; */
+}
+
+#info-wrap{
+    width: 25%;
+    height: 55%;
+    background: #ffffff;
+    position: relative;
+    left: 12.5%;
+    z-index: 2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    row-gap: 50px;
+    font-size: 25px;
+}
+.info{
+    width: 80%;
+    display: flex;
+    border: 2px solid red;
+    column-gap: 10px;
+    align-items: center;
+}
+.info-icon{
+    color: var(--highlight);
+    font-size: 40px;
+}
+
+
+
+
+#form-wrap{
+    width: 75%;
+    height: 90%;
+    background: #c588a2;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+#form-container{
+    /* height: 60%; */
+    width: 80%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+form{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    row-gap: 20px;
+    
+    
+}
+form input{
+    
+    font-size: 20px;
+    
+    font-family: 'Inter', sans-serif;
+}
+
+.smfield{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(219, 20, 20);
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 10%;
+}
+.msgarea{
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid rgb(219, 20, 20);
+    font-family: 'Inter', sans-serif;
+    min-height: 20%;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+    resize: none;
+}
+.btn{
+    padding: 15px;
+    width: 25%;
+    align-self: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* contact me section ends */
+
+@media(hover:hover){
+    .serv-con div:hover{
+        box-shadow: 1px 14px 12px -5px rgba(59,159,218, 1);
+    }
+    
+    
+    .serv-icon{
+        
+        transition: transform 0.6s  ease-in-out;
+    }
+    
+    .serv-con div:hover .serv-icon{
+        transform: rotate(360deg);
+        transition: transform 0.6s  ease-in-out;
+    }
+    #prcon div img{
+        
+        height: 390px;
+        border-radius: 10px;
+        border: 10px solid rgb(255, 255, 255);
+        transition: all 0.3s  ease-in-out;
+        
+    }
+    
+    
+    
+    #prcon div img:hover{
+        border: 10px solid var(--highlight);
+    transform: translateY(-15px);
+    transition: all 0.4s  ease-in-out;
+    
+}
+
+
+
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 82%;
+    right: 0;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+    backdrop-filter: blur(0px);
+    transition: all 0.2s ease-in-out 0s;
+    
+}
+.line{
+    width: 0;
+    height: 7px;
+    color: rgb(69, 245, 0);
+    background: rgb(69, 245, 0);
+    border-radius: 50px;
+    /* transition: all 0s ease-in-out; */
+    
+}
+.card:hover .line{
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+.card:hover .card-body{
+    backdrop-filter: blur(18px);
+    top: 0;
+    transition: all 0.55s ease-in-out 0.2s;
+}
+
+.card-body button{ 
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.card-body button:hover{
+    background: var(--highlight);
+        transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media(hover: none){
+    
+    #prcon div img{
+        
+        height: 390px;
+        border-radius: 10px;
+        border: 10px solid var(--highlight);
+        
+        
+    }
+
+    .card-body{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(59, 160, 255, 0.295);
+        backdrop-filter: blur(18px);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 30px;
+    
+    }
+
+    .card-body hr{
+        /* display: none; */
+        width: 100%;
+        height: 7px;
+        color: #e13df0;
+        background: #e13df0;
+        border-radius: 50px;
+        
+    }
+
+    .card-body button{
+        padding: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        background: #ffffff;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
